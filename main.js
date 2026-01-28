@@ -1,12 +1,16 @@
-$("#menuIcon").click(function () {
+$(document).ready(function () {
 
-    $(this).toggleClass("active");
+    $("#menuIcon").click(function () {
 
-    if ($("#sidebar").hasClass("open")) {
-        $("#sidebar").animate({ left: "-260px" }, 300);
-        $("#sidebar").removeClass("open");
-    } else {
-        $("#sidebar").animate({ left: "0px" }, 300);
-        $("#sidebar").addClass("open");
-    }
+        $(this).toggleClass("active");
+
+        if ($("#sidebar").hasClass("open")) {
+            $("#sidebar").animate({ left: "-190px" }, 300);
+            $("#sidebar").removeClass("open");
+        } else {
+            $("#sidebar").animate({ left: "0px" }, 300);
+            $("#sidebar").addClass("open");
+        }
+    });
+
 });
